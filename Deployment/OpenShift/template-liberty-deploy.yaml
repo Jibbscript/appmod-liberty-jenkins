@@ -73,16 +73,16 @@ objects:
       spec:
         containers:
         - env:
-          - name: DB2_HOST
-            value: ${DB2_HOST}
-          - name: DB2_PORT
-            value: ${DB2_PORT}
-          - name: DB2_DBNAME
-            value: ${DB2_DBNAME}
-          - name: DB2_USER
-            value: ${DB2_USER}
-          - name: DB2_PASSWORD
-            value: ${DB2_PASSWORD}
+          - name: PSQL_HOST
+            value: ${PSQL_HOST}
+          - name: PSQL_PORT
+            value: ${PSQL_PORT}
+          - name: PSQL_DBNAME
+            value: ${PSQL_DBNAME}
+          - name: PSQL_USER
+            value: ${PSQL_USER}
+          - name: PSQL_PASSWORD
+            value: ${PSQL_PASSWORD}
           image: ${APPLICATION_NAME}
           imagePullPolicy: Always
           name: ${APPLICATION_NAME}
@@ -142,22 +142,22 @@ parameters:
   required: true
   value: tasks
 - description: Hostname for COS application database
-  name: DB2_HOST
+  name: PSQL_HOST
   required: true
-  value: db2.db2.svc
+  value: postgesql.acse-db
 - desciption: Port for COS application database
-  name: DB2_PORT
+  name: PSQL_PORT
   required: true
-  value: '50000'
+  value: '5432'
 - description: Database name for COS application
-  name: DB2_DBNAME
+  name: PSQL_DBNAME
   required: true
-  value: ORDERDB
+  value: sampledb
 - description: DB2 Username
-  name: DB2_USER
+  name: PSQL_USER
   required: true
-  value: db2inst1
+  value: userXO7
 - description: DB2 Password
-  name: DB2_PASSWORD
+  name: PSQL_PASSWORD
   required: true
-  value: db2inst1
+  value: LnKltAkc0f0GcyE7

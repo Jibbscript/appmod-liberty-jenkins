@@ -85,10 +85,10 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_URL
   required: true
-  value: https://github.com/ibm-cloud-architecture/cloudpak-for-applications
+  value: https://github.com/gasgithub/appmod-liberty-jenkins
 - description: Git branch/tag reference
   name: SOURCE_REF
-  value: liberty
+  value: postgresql
 - description: WebSphere Docker Image Name -
   name: WEBSPHERE_IMAGE
   required: true

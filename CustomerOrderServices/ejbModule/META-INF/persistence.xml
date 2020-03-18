@@ -16,7 +16,7 @@
 			<property name="openjpa.MaxFetchDepth" value="5" />
 			<property name="openjpa.jdbc.MappingDefaults"
 				    value="StoreEnumOrdinal=false" />
-			<property name="openjpa.jdbc.DBDictionary" value="db2" />
+			<!--<property name="openjpa.jdbc.DBDictionary" value="db2" />-->
 		   </properties>
 	</persistence-unit>
 </persistence>
